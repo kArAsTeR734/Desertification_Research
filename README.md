@@ -40,7 +40,7 @@ $V$ и $S$ ограничены от 0 до 1, $W \ge 0$ без верхнего
 
 ```math
 D(x,y,t)=0.4(1-V)+0.3\bigl(1-\min(W,1)\bigr)+0.3(1-S),
-\qquad D_{mean}(t)=\operatorname{mean}(D).
+\qquad D_{\mathrm{mean}}(t)=\mathrm{mean}(D).
 ```
 
 $D$ находится в $[0,1]$ и служит результатом расчёта $V$, $W$, $S$;
@@ -53,7 +53,7 @@ $D$ находится в $[0,1]$ и служит результатом рас�
 распределение по местному индексу.
 
 ```math
-z=\operatorname{clip}\!\left(\frac{D-0.40}{0.50},0,1\right),
+z=\mathrm{clip}\left(\frac{D-0.40}{0.50},0,1\right),
 \qquad \mu=z^2(3-2z).
 ```
 
@@ -260,7 +260,7 @@ $`v_y=v\sin\theta`$. Погодный рисунок определён на н�
 ```math
 H(x,y,t)=\exp\{3a\tanh F(x-v_xt,y-v_yt)\},
 \qquad
-P(x,y,t)=P(t)\frac{R(x,y)H(x,y,t)}{\operatorname{mean}(RH)}.
+P(x,y,t)=P(t)\frac{R(x,y)H(x,y,t)}{\mathrm{mean}(RH)}.
 ```
 
 Поэтому $P(x,y,t)$ неотрицательно и в среднем по клеткам равно $P(t)$
